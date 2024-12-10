@@ -1,4 +1,5 @@
 # flatten nested JSON lists where they appear in any row of an column
+# assumes that required imports are present - Pandas, etc.
 
 def contains_list(series):
     return any(isinstance(item, list) for item in series)
